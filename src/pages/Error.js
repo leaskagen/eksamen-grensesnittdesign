@@ -1,10 +1,21 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
+
+import Logo from './../images/pizzalogo.png';
 
 export default function Error() {
+
+    const navigate = useNavigate();
+
     return (
-        <div>
-            <h1>404</h1>
-            <h2>This page is not found</h2>
+        <div id="error-page">
+            <figure>
+                <img src={Logo} alt="Spinning pizza logo">
+                </img>
+            </figure>
+            <h2>Denne siden finnes ikke</h2>
+            <h3 onClick={() => navigate(-1)} id="back-button">Gå tilbake</h3>
+            
         </div>
     )
 }

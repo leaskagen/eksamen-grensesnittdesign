@@ -20,7 +20,7 @@ export default function Home() {
             </figure>
             <h1>Pizzeria Bella</h1>
             <div>
-                <Link to="/Menu" className="link">Se meny</Link>
+                <Link to="/Menu" className="link">Se menyen</Link>
                 <Link to="/Delivery" className="link">Leveringsområder</Link>
             </div>
 
