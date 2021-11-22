@@ -1,4 +1,3 @@
-
 //Creating Pizza Array
 const pizzaContainer = {
   pizzas: [
@@ -75,14 +74,6 @@ const pizzaContainer = {
         'Vegansk pizza med avocado, oliven, sopp, løk, purreløk, vårløk og oregano',
       allergies: 'Gluten',
       price: 219,
-    },
-    {
-      id: '10',
-      img: 'images/kebabpizza.jpg',
-      name: 'Rango',
-      description: 'Kjøttdeig, jalapeño, paprika, sopp, mais, tacosaus',
-      allergies: 'Hvete, egg, soya',
-      price: 199,
     },
     {
       id: '11',
