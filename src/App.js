@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Import pages
 import Home from './pages/Home';
@@ -14,14 +14,13 @@ function App() {
   return (
 
     <BrowserRouter>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route>
-          <Error />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route path="/Menu" element={<Menu/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Delivery" element={<Delivery/>}/>
+        <Route path="*" element={<Error/>}/>
+      </Routes>
     </BrowserRouter>
   );
 }
