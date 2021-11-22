@@ -12,7 +12,7 @@ export default function Contact() {
 
         // Place navbar here?
     <Grid container justifyContent="center">
-           <div>
+        <div>
            <h1>Pizzeria Bella</h1>
             <h3>Telefon<PhoneIcon /></h3>
             <p>+ 47 022837</p>
@@ -24,7 +24,7 @@ export default function Contact() {
             <p>0169 Oslo</p>
         </div>
         </Grid>
-    
+        
     
 
         

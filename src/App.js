@@ -2,12 +2,11 @@
 
 
 // Import responsive breakpoints
-import './css/mobile.css';
-import './css/tablet.css';
-import './css/desktop.css';
+import './breakpoints/mobile.css';
+import './breakpoints/tablet.css';
+import './breakpoints/desktop.css';
 
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 // Import pages
 import Home from './pages/Home';
@@ -15,6 +14,8 @@ import Menu from './pages/Menu';
 import Contact from './pages/Contact';
 import Delivery from './pages/Delivery';
 import Error from './pages/Error';
+
+//import { Home, Menu, Contact, Delivery, Error} from './pages';
 
 function App() {  
   return (

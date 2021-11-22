@@ -3,7 +3,12 @@
         display: flex;
         flex-wrap: wrap;
     }
-    body > div {
+
+    body::before{
+        background-position: -100px 0;
+    }
+
+    .content-div {
         flex-basis: 50%;
     }
 }
