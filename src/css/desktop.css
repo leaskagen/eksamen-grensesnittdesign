@@ -1,0 +1,10 @@
+@media only screen and (min-width: 971px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body > div {
+        flex-basis: 33%;
+    }
+}
