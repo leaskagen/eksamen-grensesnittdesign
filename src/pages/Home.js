@@ -5,7 +5,6 @@ import Menu from './Menu';
 import Delivery from './Delivery';
 //import Contact from './Contact';
 
-
 import Logo from './../images/pizzalogo.png';
 
 import SideBar  from './../components/SideMenu';
