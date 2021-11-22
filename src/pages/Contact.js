@@ -2,7 +2,6 @@ import React from 'react'
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
-
 import SideBar  from './../components/SideMenu';
 
 
