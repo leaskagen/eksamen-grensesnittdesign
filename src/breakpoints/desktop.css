@@ -4,6 +4,10 @@
         flex-wrap: wrap;
     }
 
+    body::before{
+        background-position: 0;
+    }
+
     .content-div {
         flex-basis: 33%;
     }

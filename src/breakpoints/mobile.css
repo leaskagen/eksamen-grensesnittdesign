@@ -5,6 +5,10 @@
         flex-direction: column;
     }
 
+    body::before{
+        background-position: -200px 0;
+    }
+
     .content-div {
         flex-basis: 100%;
     }
