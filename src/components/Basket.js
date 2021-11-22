@@ -3,7 +3,6 @@ import React from "react";
 export default function Basket(props) {
     const { cartItems, addItem, removeItem } = props;
     const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
-    const totalPrice = itemsPrice;
     return (
         <div>
             <h2>Handlekurven</h2>
@@ -35,7 +34,7 @@ export default function Basket(props) {
                                 <strong>TOTALPRIS</strong>
                             </div>
                             <div>
-                                <strong>{totalPrice},-</strong>
+                                <strong>{itemsPrice},-</strong>
                             </div>
                         </div>
                         <hr />
