@@ -2,7 +2,9 @@ import React from 'react'
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
-import {Container, Grid} from '@mui/material'
+import {Grid} from '@mui/material';
+
+import SideBar  from './../components/SideMenu';
 
 
 
@@ -12,6 +14,7 @@ export default function Contact() {
 
         // Place navbar here?
     <Grid container justifyContent="center">
+        <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></SideBar>
         <div>
            <h1>Pizzeria Bella</h1>
             <h3>Telefon<PhoneIcon /></h3>

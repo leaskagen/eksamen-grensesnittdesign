@@ -1,10 +1,11 @@
-import React from 'react'
-import {Container, Grid} from '@mui/material'
-
+import React from 'react';
+import {Grid} from '@mui/material';
+import SideBar  from './../components/SideMenu';
 
 export default function Delivery() {
     return (
         <Grid container justifyContent="center" id="deliveryContent">
+            <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></SideBar>
             <div>
             <h1>Leveringsområder</h1>
             <p>Vi leverer til alle adresser i Oslo med unntak av Sørbråten, 
@@ -22,6 +23,5 @@ export default function Delivery() {
             
 
         </Grid>
-        
     )
 }
