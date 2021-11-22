@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 
+// Import responsive breakpoints
 import './css/mobile.css';
 import './css/tablet.css';
 import './css/desktop.css';

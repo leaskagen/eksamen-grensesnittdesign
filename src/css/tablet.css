@@ -1,5 +1,9 @@
 @media only screen and (min-width: 577px) and (max-width: 970px){
     body {
-      background-color: lightgoldenrodyellow;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    body > div {
+        flex-basis: 50%;
     }
 }
