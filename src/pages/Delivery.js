@@ -1,7 +1,7 @@
 import React from 'react'
 import {Grid} from '@mui/material'
 import SideBar from './../components/SideMenu';
-import './../contact.css';
+import './../delivery.css';
 
 
 
@@ -11,10 +11,8 @@ export default function Delivery() {
             <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></SideBar>
             <div>
                 <h1>Leveringsområder</h1>
-                <p>Vi leverer til alle adresser i Oslo med unntak av Sørbråten,
-                    Sørkedalen og Maridalen</p>
-                <p>I Bærum leverer vi til Fornebu, Haslum, Bekkestua, Kolsås,
-                    Høvik, Østerås og Sandvika</p>
+                <p>Vi leverer til alle adresser i Oslo med unntak av Sørbråten, Sørkedalen og Maridalen</p>
+                <p>I Bærum leverer vi til Fornebu, Haslum, Bekkestua, Kolsås, Høvik, Østerås og Sandvika</p>
                 <p>Leveringstillegg: 69kr</p>
                 <p>Adressen vår:</p>
                 <p>Louises Gate 17c</p>
