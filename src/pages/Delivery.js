@@ -1,27 +1,30 @@
 import React from 'react';
-import {Grid} from '@mui/material';
+
 import SideBar  from './../components/SideMenu';
 
 export default function Delivery() {
     return (
-        <Grid container justifyContent="center" id="deliveryContent">
+        <div>
             <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></SideBar>
-            <div>
-            <h1>Leveringsområder</h1>
-            <p>Vi leverer til alle adresser i Oslo med unntak av Sørbråten, 
-                Sørkedalen og Maridalen</p>
-            <p>I Bærum leverer vi til Fornebu, Haslum, Bekkestua, Kolsås,
-                Høvik, Østerås og Sandvika</p>   
-            <p>Leveringstillegg: 69kr</p>
-            <p>Adressen vår:</p>
-            <p>Louises Gate 17c</p>
-            <p>0169 Oslo</p>
-            <img width="100%" src="https://bym-nyhetsrom-prod-files.s3.eu-west-1.amazonaws.com/wp-content/uploads/2015/12/kart-ring2.jpg"></img>
-            </div>
-
-
-            
-
-        </Grid>
+            <main id="deliveryContent">
+                <div>
+                <h1>Leveringsområder</h1>
+                <hr></hr>
+                <p>Vi leverer til alle adresser i Oslo med unntak av Sørbråten, Sørkedalen og Maridalen</p>
+                <p>Leveringstillegg: 69kr</p>
+                <p>Adressen vår:</p>
+                <ul>
+                    <li>Louises Gate 17c</li>
+                    <li>0169 Oslo</li>
+                </ul>
+                    <div class="mapouter"><div class="gmap_canvas">
+                        <iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=louises%20gate%2017c&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div> 
+                
+                </div>
+            </main>
+        </div>
+        
     )
 }
