@@ -1,5 +1,6 @@
-
+.side-menu-figure {
+    margin-left: 12px;
+}
 .side-menu-figure > img {
     width: 150px;
-
 }

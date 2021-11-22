@@ -32,13 +32,19 @@ body::before{
   content: "";
 }
 
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
   font-family: pizza-font;
 }
 
 h1 {
   font-size: 40px;
+}
+
+#back-button {
+  color: darkslateblue;
+  font-size: 24px;
+  text-decoration: underline;
 }
 
 #logo-front {
@@ -113,7 +119,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
   background: white;
   padding: 1.5em 1.5em 0;
-  font-size: 1.15em;
+  font-size: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,7 +153,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: inline-block;
 
   color: black;
-  margin-bottom: 10px;
+  margin: 20px 10px;
   text-align: left;
   text-decoration: none;
   transition: color 0.2s;
@@ -155,4 +161,21 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .bm-item:hover {
   color: #b8b7ad;
+}
+
+hr {
+  border-top: 1px solid lightgray;
+}
+
+#error-page img {
+  animation: spin 20s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
