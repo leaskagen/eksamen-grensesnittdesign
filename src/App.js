@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
+import './css/mobile.css';
+import './css/tablet.css';
+import './css/desktop.css';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Import pages
@@ -12,7 +16,6 @@ import Error from './pages/Error';
 
 function App() {  
   return (
-
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
