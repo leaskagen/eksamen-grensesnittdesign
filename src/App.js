@@ -13,11 +13,6 @@ import Error from './pages/Error';
 function App() {  
   return (
 
-    <Home>
-      
-    </Home>
-
-    /*
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
@@ -28,7 +23,6 @@ function App() {
         </Route>
       </Switch>
     </BrowserRouter>
-    */
   );
 }
 
