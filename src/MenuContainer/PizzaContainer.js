@@ -129,4 +129,4 @@ const PizzaContainer = (function () {
 })();
 
 //exporting module
-export default PizzaContainerModule;
+export default PizzaContainer;
