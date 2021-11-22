@@ -13,6 +13,7 @@ import Menu from './pages/Menu';
 import Contact from './pages/Contact';
 import Delivery from './pages/Delivery';
 import Error from './pages/Error';
+import ShoppingCart from './pages/ShoppingCart';
 
 function App() {  
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Menu" element={<Menu/>}/>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/Delivery" element={<Delivery/>}/>
+        <Route path="/ShoppingCart" element={<ShoppingCart/>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
     </BrowserRouter>
