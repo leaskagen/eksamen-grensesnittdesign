@@ -1,4 +1,5 @@
-  import './App.css';
+import './App.css';
+import './SideMenu.css';
 
 
 // Import responsive breakpoints
@@ -6,7 +7,8 @@ import './breakpoints/mobile.css';
 import './breakpoints/tablet.css';
 import './breakpoints/desktop.css';
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Import pages
 import Home from './pages/Home';
