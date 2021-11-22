@@ -4,7 +4,7 @@
         flex-wrap: wrap;
     }
 
-    body > div {
+    .content-div {
         flex-basis: 33%;
     }
 }

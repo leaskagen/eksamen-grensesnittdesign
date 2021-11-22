@@ -1,7 +1,72 @@
+@font-face {
+  font-family: pizza-font;
+  src: url(./Roboto-Regular.ttf);
+}
+
 * {
   font-family: sans-serif;
 }
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: auto;
+
+}
+
+body::before{
+  background-image: url(./images/background.jpg);
+  background-position: -300px 0px;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+  content: "";
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: pizza-font;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#logo-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-front > img {
+  width: 50%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 550;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/*
+#front-page {
+  
+}*/
+
+#side-menu {
+  background-color: white;
+
 }
