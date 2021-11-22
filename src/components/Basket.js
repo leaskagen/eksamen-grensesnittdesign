@@ -1,8 +1,10 @@
-import React from "react";
+import {React} from "react";
+import {Link} from "react-router-dom";
 
 export default function Basket(props) {
     const { cartItems, addItem, removeItem } = props;
     const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
+
     return (
         <div>
             <h2>Handlekurven</h2>
@@ -39,9 +41,11 @@ export default function Basket(props) {
                         </div>
                         <hr />
                         <div>
-                            <button onClick={() => alert('HER MÅ VI IMPLEMENTERE CHECKOUT')}>
+                            <Link to="/Checkout">
+                            <button>
                                 Til Betaling
                             </button>
+                            </Link>
                         </div>
                     </>
                 )}

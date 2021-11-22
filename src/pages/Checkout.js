@@ -1,18 +1,15 @@
-import Basket from "../components/Basket";
-import Header from "../components/Header";
-import Main from "../components/Main";
-import pizzaContainer from '../MenuContainer/PizzaContainer'
+import React from 'react'
 import { useState, useEffect } from 'react';
+import Basket from "../components/Basket";
 
-//Function for adding item, removing item and 
-function ShoppingCart() {
+function Checkout() {
     const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]')
-    const { pizzas } = pizzaContainer;
     const [cartItems, setCartItems] = useState(cartFromLS);
-    
+
     useEffect(() => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
     }, [cartItems])
+
 
     //Add item function
     const addItem = (pizza) => {
@@ -44,9 +41,7 @@ function ShoppingCart() {
     //Returning the objects
     return (
         <div>
-            <Header countCartItems={cartItems.length}></Header>
             <div>
-                <Main pizzas={pizzas} addItem={addItem}></Main>
                 <Basket
                     cartItems={cartItems}
                     addItem={addItem}
@@ -57,4 +52,4 @@ function ShoppingCart() {
     );
 }
 
-export default ShoppingCart;
+export default Checkout;

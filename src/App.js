@@ -17,6 +17,7 @@ import Contact from './pages/Contact';
 import Delivery from './pages/Delivery';
 import Error from './pages/Error';
 import ShoppingCart from './pages/ShoppingCart';
+import Checkout from './pages/Checkout';
 
 //import { Home, Menu, Contact, Delivery, Error} from './pages';
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/Delivery" element={<Delivery/>}/>
         <Route path="/ShoppingCart" element={<ShoppingCart/>}/>
+        <Route path="/Checkout" element={<Checkout/>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
     </BrowserRouter>
