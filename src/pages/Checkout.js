@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Basket from "../components/Basket";
@@ -47,6 +48,10 @@ function Checkout() {
                     addItem={addItem}
                     removeItem={removeItem}
                 ></Basket>
+                <Button variant="primary">PayPal</Button>
+                <Button variant="secondary">Klarna</Button>
+                <Button variant="warning">Debit/Mastercard</Button>
+                <Button variant="light">Krypto</Button>
             </div>
         </div>
     );
