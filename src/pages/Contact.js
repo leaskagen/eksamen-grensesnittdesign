@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
     return (
         <div>
-            <h1>Contact page</h1>
+            <h1>Pizzeria Bella</h1>
         </div>
     )
 }
