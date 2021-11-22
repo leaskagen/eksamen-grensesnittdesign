@@ -2,6 +2,7 @@ import React from 'react'
 import {Container, Grid} from '@mui/material'
 
 
+
 export default function Delivery() {
     return (
         <Grid container justifyContent="center" id="deliveryContent">
