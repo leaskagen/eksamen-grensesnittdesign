@@ -29,11 +29,15 @@
         margin-top: 5px;
     }
 
-    h1 {
-        justify-self: center;
+    #front-page h1 {
         margin: 40px 50px;
         border-bottom: lightgray solid 1px;
         padding-bottom: 10px;
+    }
+
+    h1 {
+        justify-self: center;
+        padding-top: 20px;
     }
 
     .front-page-div div {
@@ -42,6 +46,10 @@
     }
 
     .front-news {
+        display: none;
+    }
+
+    .navbar-top {
         display: none;
     }
 }

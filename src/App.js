@@ -1,5 +1,6 @@
 import './App.css';
 import './SideMenu.css';
+import './Navbar.css'
 
 
 // Import responsive breakpoints
