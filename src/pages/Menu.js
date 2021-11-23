@@ -31,6 +31,19 @@ function Menu(props) {
             setCartItems([...cartItems, { ...pizza, qty: 1 }]);
         }
     };
+    //Remove item function
+    const removeItem = (pizza) => {
+        const exist = cartItems.find((x) => x.id === pizza.id);
+        if (exist.qty === 1) {
+            setCartItems(cartItems.filter((x) => x.id !== pizza.id));
+        } else {
+            setCartItems(
+                cartItems.map((x) =>
+                    x.id === pizza.id ? { ...exist, qty: exist.qty - 1 } : x
+                )
+            );
+        }
+    };
 
 
     //Returning the objects
@@ -41,7 +54,7 @@ function Menu(props) {
             <main>
                 <div>
                     <div>
-                        <Main pizzas={pizzas} addItem={addItem}></Main>
+                        <Main pizzas={pizzas} addItem={addItem} removeItem={removeItem}></Main>
                     </div>
                 </div>
             </main>
