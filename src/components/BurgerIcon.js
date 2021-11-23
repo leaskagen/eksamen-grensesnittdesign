@@ -13,6 +13,11 @@ function BurgerIcon({ open, ...props }) {
           fontSize="inherit"
           style={{ fontSize: "40px" }} />
         </div>
+        <div className="sc-icon-medium">
+          <ShoppingCartOutlinedIcon 
+          fontSize="inherit"
+          style={{ fontSize: "60px" }} />
+        </div>
         <div className="sc-icon">
           <ShoppingCartOutlinedIcon 
           fontSize="inherit"

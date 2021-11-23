@@ -97,6 +97,11 @@ p {
   height: 30px;
   left: 36px;
   top: 36px;
+  background-color: white;
+
+  box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
+-webkit-box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
+-moz-box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
 }
 
 /* Color/shape of burger icon bars */
