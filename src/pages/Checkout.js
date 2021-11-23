@@ -51,7 +51,7 @@ function Checkout() {
     return (
         <div>
             <div>
-                
+
                 <Basket
                     cartItems={cartItems}
                     addItem={addItem}
@@ -59,29 +59,40 @@ function Checkout() {
                 ></Basket>
 
                 <div id="personalia-text">
-                <PersonIcon className="contact-icon"/>
-                <TextField id="standard-basic" label="Fullt navn:"   placeholder="Fullt navn:" variant="standard" />
-                <br></br>
-                <PhoneIcon className="contact-icon" />
-                <TextField id="standard-basic" label="Telefon:" placeholder="Telefon:" variant="standard" />
-                <br></br>
-                <MailIcon className="contact-icon"/>
-                <TextField id="standard-basic" label="Email:"  placeholder="Email:" variant="standard" />
-                <br></br>
-                <HomeIcon className="contact-icon"/>
-                <TextField id="standard-basic" label="Adresse:"  placeholder="Email:" variant="standard" />
-                <br></br>
+                    <PersonIcon className="contact-icon" />
+                    <TextField id="standard-basic" label="Fullt navn:" placeholder="Fullt navn:" variant="standard" />
+                    <br></br>
+                    <PhoneIcon className="contact-icon" />
+                    <TextField id="standard-basic" label="Telefon:" placeholder="Telefon:" variant="standard" />
+                    <br></br>
+                    <MailIcon className="contact-icon" />
+                    <TextField id="standard-basic" label="Email:" placeholder="Email:" variant="standard" />
+                    <br></br>
+                    <HomeIcon className="contact-icon" />
+                    <TextField id="standard-basic" label="Adresse:" placeholder="Email:" variant="standard" />
+                    <br></br>
                 </div>
-                
+
                 <div id="pay-Options">
-                <h4>Velg betalingsmetode:</h4>
-                <Button id="paypal-btn" variant="primary"><strong>PayPal</strong></Button>
-                <Button  id="klarna-btn" variant="secondary"><strong>Klarna</strong></Button>
-                <Button  id="card-btn" variant="warning"><strong>Debit/Mastercard</strong></Button>
-                <Button  id="vipps-btn" variant="light"><strong>Vipps</strong></Button>
-                <ArrowBackIcon class="text-left" Link to="/Menu" className="link link-home"/>
-              
-                    
+                    <h4>Velg betalingsmetode:</h4>
+                    <Link className="pay-btn" to="/OrderComplete">
+                        <Button id="paypal-btn" variant="primary"><strong>PayPal</strong></Button>
+                    </Link>
+                    <Link className="pay-btn" to="/OrderComplete">
+                        <Button id="vipps-btn" variant="light"><strong>Vipps</strong></Button>
+                    </Link>
+                    <Link className="pay-btn" to="/OrderComplete">
+                        <Button id="card-btn" variant="warning"><strong>Debit/Mastercard</strong></Button>
+                    </Link>
+                    <Link className="pay-btn" to="/OrderComplete">
+                        <Button id="klarna-btn" variant="secondary"><strong>Klarna</strong></Button>
+                    </Link>
+
+
+
+                    <ArrowBackIcon class="text-left" Link to="/Menu" className="link link-home" />
+
+
                 </div>
             </div>
         </div>
