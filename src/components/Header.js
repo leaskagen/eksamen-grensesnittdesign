@@ -9,7 +9,7 @@ export default function Header(props) {
                     ) : (
                         ''
                     )}
-                </a>{' npmØ'}
+                </a>{' '}
             </div>
         </header>
     );
