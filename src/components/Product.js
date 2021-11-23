@@ -2,7 +2,7 @@ import { Button } from '@mui/material';
 import React from 'react'
 
 export default function Product(props) {
-    const { pizza, addItem} = props;
+    const { pizza, addItem } = props;
 
     return (
         <div className="food-item">

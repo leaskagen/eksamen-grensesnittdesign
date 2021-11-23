@@ -12,11 +12,11 @@ import ShoppingCart from "./../components/ShoppingCart";
 function Menu() {
     const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]');
     const { pizzas } = pizzaContainer;
-    const [cartItems, setCartItems] = useState(cartFromLS);
+    const [cartItems, setCartItems] = useState([]);
 
     useEffect(() => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    }, [cartItems])
+    }, [cartFromLS])
 
     //Add item function
     const addItem = (pizza) => {
@@ -46,7 +46,6 @@ function Menu() {
     };
 
 
-
     //Returning the objects
     return (
         <div>
@@ -68,7 +67,7 @@ function Menu() {
                 modal
                 overlayStyle={{ background: "rgba(255,255,255,0.98" }}
                 closeOnDocumentClick={false}
-                trigger={open => <BurgerIcon open={open} />}>
+                trigger={open => <BurgerIcon open={open} /> }>
                 {close => <ShoppingCart close={close, useEffect} />}
             </Popup>
         </div>
