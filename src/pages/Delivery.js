@@ -1,11 +1,13 @@
 import React from 'react';
 
 import SideBar  from './../components/SideMenu';
+import NavBar from './../components/Navbar';
 
 export default function Delivery() {
     return (
         <div>
             <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></SideBar>
+            <NavBar></NavBar>
             <main id="deliveryContent">
                 <div>
                 <h1>Leveringsområder</h1>

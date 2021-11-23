@@ -3,6 +3,7 @@ import Main from "../components/Main";
 import pizzaContainer from '../MenuContainer/PizzaContainer';
 import { useState, useEffect } from 'react';
 import SideBar from './../components/SideMenu';
+import NavBar from './../components/Navbar';
 
 import Popup from "reactjs-popup";
 import BurgerIcon from "./../components/BurgerIcon";
@@ -49,6 +50,7 @@ function Menu(props) {
     return (
         <div>
             <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></SideBar>
+            <NavBar></NavBar>
             <main>
                 <div>
                     <div>

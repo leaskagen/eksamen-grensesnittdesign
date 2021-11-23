@@ -19,7 +19,7 @@ body {
 
 body::before{
   background-image: url(./images/background.jpg);
-  position: absolute;
+  position: fixed;
   background-size: cover;
   background-attachment: fixed;
   top: 0;
@@ -27,7 +27,7 @@ body::before{
   bottom: 0;
   right: 0;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.1;
   content: "";
 }
 
@@ -302,4 +302,20 @@ ul {
   position: absolute;
   top: 0px;
   right: 0px;
+}
+.contact-icon {
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+  height: 24px;
+}
+
+.contact-h {
+  text-align: left;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+#contact-div p {
+  margin: 10px 0;
 }

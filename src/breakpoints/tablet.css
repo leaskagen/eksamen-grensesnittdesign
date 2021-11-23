@@ -11,4 +11,8 @@
     .content-div {
         flex-basis: 50%;
     }
+
+    .navbar-top {
+        display: none;
+    }
 }

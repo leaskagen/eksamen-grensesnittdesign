@@ -101,6 +101,12 @@
     .front-news p:not(:first-of-type) {
         color: gray;
     }
+
+    /*
+    .navbar-top {
+        display: block;
+    }
+    */
 }
 
 @media only screen and (min-width: 971px) and (max-width: 1392px) {
