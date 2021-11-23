@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react'
 
 export default function Product(props) {
@@ -9,8 +10,8 @@ export default function Product(props) {
             <div>{pizza.description}</div>
             <div>{pizza.allergies}</div>
             <div>{pizza.price},-</div>
-            <div>
-                <button onClick={() => addItem(pizza)}>Legg til i handlekurv</button>
+            <div className="text-right">
+                <Button color="success" variant="contained" onClick={() => addItem(pizza)}>Legg til i handlekurv</Button>
             </div>
             <hr />
         </div>
