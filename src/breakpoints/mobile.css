@@ -3,6 +3,7 @@
         margin-top: 20px;
         display: flex;
         flex-direction: column;
+        overflow-y: hidden;
     }
 
     body::before{
@@ -25,10 +26,14 @@
         margin-top: 40px;
     }
 
-    .content-div > div {
+    .front-page-div div {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .front-news {
+        display: none;
     }
 }

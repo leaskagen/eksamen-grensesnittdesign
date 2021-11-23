@@ -2,13 +2,109 @@
     body {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     body::before{
         background-position: 0;
     }
 
+    .link {
+        font-size: 34px;
+    }
+
     .content-div {
-        flex-basis: 33%;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        height: 50px;
+    }
+
+    .bm-burger-button {
+        display: none;
+    }
+
+    .bm-menu-wrap {
+        display: none;
+    }
+
+    /*
+    #front-page div {
+        display: flex;
+        flex-direction: row;
+    }
+*/
+
+
+    #front-page h1 {
+        font-size: 50px;
+    }
+
+    #front-page-div {
+        background-color: white;
+        width: 80vw;
+        height: 80vh;
+        padding: 3em;
+
+        display: flex;
+        flex-direction: column;
+
+        box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+        -webkit-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+        -moz-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+    }
+
+    #front-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #logo-front img {
+        height: 100px;
+        width: auto;
+    }
+
+    .front-news {
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 2em;
+        height: 65em;
+        display: block;
+        background-image: url(./../images/Pizza-front.jpg);
+        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        font-size: 40px;
+    }
+
+    .front-news div {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        flex-direction: row;
+        position: relative;
+        top: 100px;
+    }
+
+    .front-news p {
+        color: white;
+        font-size: 100px;
+        text-shadow: 0 0 10px #FFFFFF;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: gray;
+        margin-top: 0;
+    }
+
+    .front-news p:not(:first-of-type) {
+        color: gray;
+    }
+}
+
+@media only screen and (min-width: 971px) and (max-width: 1392px) {
+    .front-news div {
+        top: 47px;
     }
 }

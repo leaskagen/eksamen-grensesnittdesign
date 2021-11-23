@@ -15,13 +15,13 @@ body {
   margin: auto;
   width: 100vw;
   height: 100vh;
-
 }
 
 body::before{
   background-image: url(./images/background.jpg);
   position: absolute;
   background-size: cover;
+  background-attachment: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -35,7 +35,7 @@ main {
 
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   text-align: center;
   font-family: pizza-font;
 }
@@ -64,7 +64,7 @@ p {
 }
 
 #logo-front > img {
-  width: 50%;
+  width: 70%;
 }
 
 .link {
@@ -72,7 +72,7 @@ p {
   color: black;
   text-align: center;
   font-size: 24px;
-  font-weight: 550;
+
 }
 
 .link:hover {
