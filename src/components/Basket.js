@@ -2,7 +2,6 @@
 import { Container } from "@mui/material";
 import {React} from "react";
 
-
 export default function Basket(props) {
     const { cartItems, addItem, removeItem } = props;
     const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);

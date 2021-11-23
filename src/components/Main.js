@@ -5,13 +5,14 @@ import Product from "./Product";
 export default function Main(props) {
     const { pizzas, addItem } = props;
     return (
-        <main className="col-1 block">
-            <h1>Meny</h1>
-            <Container>
+        <main id="food-page">
+            
                 {pizzas.map((pizza) => (
                     <Product key={pizza.id} pizza={pizza} addItem={addItem}></Product>
                 ))}
-            </Container>
+            
         </main>
     );
 }
+
+// className="col-1 block"

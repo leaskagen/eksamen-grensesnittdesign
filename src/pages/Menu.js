@@ -46,13 +46,19 @@ function Menu() {
     };
 
 
+
     //Returning the objects
     return (
         <div>
             <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></SideBar>
             <NavBar></NavBar>
             <main>
-                <div>
+                
+                <div className="desktop-div">
+                    <div>
+                        <h1>Meny</h1>
+                        <hr></hr>
+                    </div>
                     <div>
                         <Main pizzas={pizzas} addItem={addItem} removeItem={removeItem}></Main>
                     </div>
@@ -63,7 +69,7 @@ function Menu() {
                 overlayStyle={{ background: "rgba(255,255,255,0.98" }}
                 closeOnDocumentClick={false}
                 trigger={open => <BurgerIcon open={open} />}>
-                {close => <ShoppingCart close={close} />}
+                {close => <ShoppingCart close={close, useEffect} />}
             </Popup>
         </div>
     );
