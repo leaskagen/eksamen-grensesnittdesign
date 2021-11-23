@@ -1,6 +1,8 @@
+//Importing components
 import React from "react";
 import Product from "./Product";
 
+//Exporting a function for listing out menu
 export default function Main(props) {
     const { pizzas, addItem } = props;
     return (

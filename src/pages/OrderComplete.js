@@ -1,6 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-
 import Logo from './../images/pizzalogo.png';
 
 export default function OrderCompleted() {

@@ -1,8 +1,9 @@
+//Importing components
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-
 import Logo from './../images/pizzalogo.png';
 
+//Error page
 export default function Error() {
 
     const navigate = useNavigate();

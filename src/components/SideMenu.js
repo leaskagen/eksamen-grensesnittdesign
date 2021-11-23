@@ -1,17 +1,9 @@
+//importing components 
 import React from 'react';
 import { slide as SideMenu } from 'react-burger-menu';
-//import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
 import Logo from './../images/pizzalogo.png';
 
-// Import pages 
-/*
-import Home from './../pages/Home';
-import Menu from './../pages/Menu';
-import Contact from './../pages/Contact';
-import Delivery from './../pages/Delivery';
-*/
-
+//Sidebar which pops up when pressing the three bars.
 export default props => {
   return (
     <SideMenu>
@@ -35,30 +27,3 @@ export default props => {
     </SideMenu>
   );
 };
-
-/*
-<Link className="menu-item" to="/Menu">
-        Menu
-      </Link>
-      <Link className="menu-item" to="/Delivery">
-        Leveringsområder
-      </Link>
-      <Link className="menu-item" to="/Contact">
-        Pizzas
-      </Link>
-      <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route path="/Menu" element={<Menu/>}/>
-        <Route path="/Contact" element={<Contact/>}/>
-        <Route path="/Delivery" element={<Delivery/>}/>
-      </Routes>
-      */
-
-/*
-export default function SideMenu() {
-    return (
-        <nav id="side-menu">
-            <h1>aegrogr</h1>
-        </nav>
-    )
-} */

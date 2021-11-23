@@ -1,14 +1,12 @@
+//Components needed
 import React from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
-
 import Logo from './../images/pizzalogo.png';
-
-//import Home from './../pages/Home';
 import Menu from './../pages/Menu';
 import Delivery from './../pages/Delivery';
 import Contact from './../pages/Contact';
 
-
+//Navigation bar for every page
 export default function Navbar() {
     return (
         <nav className="navbar-top">

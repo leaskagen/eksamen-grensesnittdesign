@@ -1,3 +1,4 @@
+//Importing components
 import React from 'react'
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
@@ -6,9 +7,7 @@ import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 import SideBar  from './../components/SideMenu';
 import NavBar from './../components/Navbar';
 
-
-
-
+//Contact-function for printing out contact information
 export default function Contact() {
     return (
         <div>

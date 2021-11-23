@@ -1,15 +1,13 @@
+//Importing components 
 import React from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
-
 import Menu from './Menu';
 import Delivery from './Delivery';
 import Contact from './Contact';
-
 import Logo from './../images/pizzalogo.png';
-
 import SideBar  from './../components/SideMenu';
 
-
+//Function for printing out homepage with sidebar that connects to all pages.
 export default function Home() {
     return (
         <div>

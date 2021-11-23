@@ -1,8 +1,10 @@
+//Importing components
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Basket from "../components/Basket";
 
 function Checkout() {
+    //Storing cartItems even when reloading the page.
     const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]')
     const [cartItems, setCartItems] = useState(cartFromLS);
 

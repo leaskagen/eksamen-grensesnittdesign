@@ -1,9 +1,11 @@
+//Importing components
 import { Button } from '@mui/material';
 import React from 'react'
 
 export default function Product(props) {
     const { pizza, addItem } = props;
 
+    //Listing out every item and information with an add-button
     return (
         <div className="food-item">
             <img src={pizza.img} alt={pizza.name} className="small" />

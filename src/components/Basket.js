@@ -1,11 +1,14 @@
-//import '../App.css';
+//Importing stuff
 import { Container } from "@mui/material";
 import {React} from "react";
 
+//function for basket
 export default function Basket(props) {
+    //Declaring variables
     const { cartItems, addItem, removeItem } = props;
     const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
 
+    //Returning output based on items added.
     return (
         <Container>
             <h2>Handlekurv</h2>
@@ -25,6 +28,7 @@ export default function Basket(props) {
                         <div>
                             {item.qty} x {item.price},-
                         </div>
+                        <hr/>
                     </div>
                 ))}
 

@@ -1,5 +1,6 @@
 export default function Header(props) {
 
+    //Counting cartItems and listing out
     return (
             <div>
                     {' '}
