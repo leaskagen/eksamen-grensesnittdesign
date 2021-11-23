@@ -3,13 +3,15 @@ import Header from "../components/Header";
 import Main from "../components/Main";
 import pizzaContainer from '../MenuContainer/PizzaContainer'
 import { useState, useEffect } from 'react';
+import {Link} from "react-router-dom";
+import { Container } from "@mui/material";
 
 //Function for adding item, removing item and 
 function ShoppingCart() {
     const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]')
     const { pizzas } = pizzaContainer;
     const [cartItems, setCartItems] = useState(cartFromLS);
-    
+
     useEffect(() => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
     }, [cartItems])
@@ -52,6 +54,13 @@ function ShoppingCart() {
                     addItem={addItem}
                     removeItem={removeItem}
                 ></Basket>
+                <Container className="text-right">
+                    <Link to="/Checkout">
+                        <button>
+                            Til Betaling
+                        </button>
+                    </Link>
+                </Container>
             </div>
         </div>
     );

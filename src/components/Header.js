@@ -1,6 +1,6 @@
 export default function Header(props) {
     return (
-        <header>
+        <header className="block row center">
             <div>
                 <a href="#/cart" onClick={() => alert('Til handlekurv')}>
                     Handlekurv{' '}
@@ -9,7 +9,7 @@ export default function Header(props) {
                     ) : (
                         ''
                     )}
-                </a>{' '}
+                </a>{' npmØ'}
             </div>
         </header>
     );
