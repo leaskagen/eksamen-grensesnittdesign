@@ -297,3 +297,9 @@ ul {
   left: 9px;
   top: 10px;
 }
+
+.cart-item-count {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}

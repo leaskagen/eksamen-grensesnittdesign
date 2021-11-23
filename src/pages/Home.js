@@ -8,7 +8,6 @@ import Contact from './Contact';
 import Logo from './../images/pizzalogo.png';
 
 import SideBar  from './../components/SideMenu';
-import { dividerClasses } from '@mui/material';
 
 
 export default function Home() {

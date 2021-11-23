@@ -1,15 +1,14 @@
 import React from 'react';
-import Header from "../components/Header";
 import Main from "../components/Main";
 import pizzaContainer from '../MenuContainer/PizzaContainer';
 import { useState, useEffect } from 'react';
-import SideBar  from './../components/SideMenu';
+import SideBar from './../components/SideMenu';
 
 import Popup from "reactjs-popup";
 import BurgerIcon from "./../components/BurgerIcon";
 import ShoppingCart from "./../components/ShoppingCart";
 
-function Menu() {
+function Menu(props) {
     const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]');
     const { pizzas } = pizzaContainer;
     const [cartItems, setCartItems] = useState(cartFromLS);
@@ -32,6 +31,7 @@ function Menu() {
         }
     };
 
+
     //Returning the objects
     return (
         <div>
@@ -50,7 +50,7 @@ function Menu() {
                 trigger={open => <BurgerIcon open={open} />}>
                 {close => <ShoppingCart close={close} />}
             </Popup>
-        </div>    
+        </div>
     );
 }
 export default Menu;

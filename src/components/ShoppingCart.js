@@ -1,6 +1,4 @@
 import React from "react";
-import { useState, useEffect } from 'react';
-import Basket from "../components/Basket";
 import ShoppingItems from './ShoppingItems';
 import { Link } from "react-router-dom";
 import Checkout from './../pages/Checkout';
