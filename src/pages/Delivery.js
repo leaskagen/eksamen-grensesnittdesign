@@ -25,10 +25,10 @@ export default function Delivery() {
                         </ul>
                     </div> 
                     <div class="mapouter-small"><div class="gmap_canvas">
-                        <iframe width="260" height="220" id="gmap_canvas" src="https://maps.google.com/maps?q=louises%20gate%2017c&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <iframe title="iframe1" width="260" height="220" id="gmap_canvas" src="https://maps.google.com/maps?q=louises%20gate%2017c&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div></div>
                     <div class="mapouter"><div class="gmap_canvas">
-                        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=louises%20gate%2017c&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <iframe title="iframe2" width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=louises%20gate%2017c&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div></div>
                 </div>
             </main>

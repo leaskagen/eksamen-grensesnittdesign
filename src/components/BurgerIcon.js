@@ -8,7 +8,7 @@ function BurgerIcon({ open, ...props }) {
 
   //Storing cart items to localStorage
   const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]');
-
+  
   return (
     <div className={open ? "burger-menu open" : "burger-menu"} {...props}>
       <div id="shopping-cart-icon">

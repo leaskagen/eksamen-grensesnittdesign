@@ -19,7 +19,7 @@ function Menu() {
 
     useEffect(() => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    }, [cartFromLS])
+    }, [cartItems, cartFromLS])
 
     //Add item function
     const addItem = (pizza) => {

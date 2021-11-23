@@ -14,7 +14,7 @@ export default function Navbar() {
             <Link to="/" className="link">
                 <div className="nav-logo">
                     <figure>
-                        <img src={Logo}></img>
+                        <img src={Logo} alt="logo"></img>
                         
                     </figure>
                     <h1>Pizzeria Bella</h1>
