@@ -247,7 +247,7 @@
         top: 25px;
       }
 
-    .sc-icon-small {
+    .sc-icon-small, .sc-icon-medium {
         display: none;
     }
 

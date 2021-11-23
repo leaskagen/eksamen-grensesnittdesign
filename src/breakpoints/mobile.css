@@ -13,6 +13,10 @@
         padding: 20px 40px;
     }
 
+    #front-page {
+        flex-direction: column;
+    }
+
     .content-div {
         flex-basis: 100%;
         display: flex;
@@ -99,7 +103,7 @@
         
     }
 
-    .sc-icon {
+    .sc-icon, .sc-icon-medium {
         display: none;
     }
 
