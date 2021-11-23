@@ -4,6 +4,12 @@ import Main from "../components/Main";
 import pizzaContainer from '../MenuContainer/PizzaContainer'
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import SideBar  from './../components/SideMenu';
+
+import { render } from "react-dom";
+import Popup from "reactjs-popup";
+import BurgerIcon from "./../components/BurgerIcon";
+import ShoppingCart from "./../components/ShoppingCart";
 
 function Menu() {
     const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]');
@@ -31,15 +37,29 @@ function Menu() {
     //Returning the objects
     return (
         <div>
-            <Link to="/Checkout">
+            <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></SideBar>
+            <main>
+                <div>
+                    <div>
+                        <Main pizzas={pizzas} addItem={addItem}></Main>
+                    </div>
+                </div>
+            </main>
+            <Popup
+                modal
+                overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+                closeOnDocumentClick={false}
+                trigger={open => <BurgerIcon open={open} />}>
+                {close => <ShoppingCart close={close} />}
+            </Popup>
+        </div>    
+    );
+}
+export default Menu;
+/*
+<Link to="/Checkout">
                 <button>
                     <Header countCartItems={cartItems.length}></Header>
                 </button>
             </Link>
-            <div>
-                <Main pizzas={pizzas} addItem={addItem}></Main>
-            </div>
-        </div>
-    );
-}
-export default Menu;
+            */

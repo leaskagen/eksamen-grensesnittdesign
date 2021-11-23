@@ -156,6 +156,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
   top: 0;
+  z-index: 1002 !important;
 }
 
 
@@ -227,4 +228,72 @@ ul {
 
 .text-center {
   text-align: center;
+}
+
+.burger-menu,
+.burger-menu.open {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  z-index: 1001;
+  background: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.burger-menu {
+  background-color: #6fd98b;
+}
+
+.burger-menu.open {
+  background-color: #fc6f6f;
+}
+
+.burger-menu .bar1,
+.bar2,
+.bar3 {
+  visibility: hidden;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.burger-menu.open .bar1 {
+  visibility: visible;
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.burger-menu.open .bar2 {
+  opacity: 0;
+}
+
+.burger-menu.open .bar3 {
+  visibility: visible;
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* Menu */
+
+.menu {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0px;
+}
+
+.burger-menu.open #shopping-cart-icon {
+  display: none;
+}
+
+#shopping-cart-icon {
+  position: absolute;
+  left: 9px;
+  top: 10px;
 }
