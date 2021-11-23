@@ -1,9 +1,11 @@
+import './../css/menu.css';
+
 //Creating Pizza Array
 const pizzaContainer = {
   pizzas: [
     {
       id: '1',
-      img: 'images/ufo.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P1.jpg',
       name: 'Ufo',
       description: 'Flyvende pizza toppet med pepperoni, skinke og ananas',
       allergies: 'Melk, nøtter, hvete',
@@ -11,7 +13,7 @@ const pizzaContainer = {
     },
     {
       id: '2',
-      img: 'images/kebabpizza.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P90.jpg',
       name: 'Carolina reaper triple cheese',
       description:
         'Landets sterkeste pizza. Kjøttdeig, løk, carolina reaper krydder, trippel ost',
@@ -20,7 +22,7 @@ const pizzaContainer = {
     },
     {
       id: '3',
-      img: 'images/svensken.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P91.jpg',
       name: 'Svensken',
       description: 'Simpel pizza med skinke, ost og sopp',
       allergies: 'Melk, nøtter, soya.',
@@ -28,7 +30,7 @@ const pizzaContainer = {
     },
     {
       id: '4',
-      img: 'images/donjuan.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P92.jpg',
       name: 'Don Juan',
       description: 'Biffstrimler, sopp og løk',
       allergies: 'Gluten, hvete',
@@ -36,7 +38,7 @@ const pizzaContainer = {
     },
     {
       id: '5',
-      img: 'images/viking.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P12.jpg',
       name: 'Viking',
       description: 'Biff, paprika, løk og ananas. Toppet med bernaise',
       allergies: 'Gluten, egg og laktose',
@@ -44,7 +46,7 @@ const pizzaContainer = {
     },
     {
       id: '6',
-      img: 'images/nomeat.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P2.jpg',
       name: 'Hawaii',
       description: 'biff, pepperoni, løk',
       allergies: 'Gluten, egg og laktose',
@@ -52,7 +54,7 @@ const pizzaContainer = {
     },
     {
       id: '7',
-      img: 'images/tacospesial.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P11.jpg',
       name: 'Tacospesial',
       description: 'Kjøttdeig, mais, paprika, løk, jalapenos og tortillachips',
       allergies: 'Gluten, egg og laktose',
@@ -60,7 +62,7 @@ const pizzaContainer = {
     },
     {
       id: '8',
-      img: 'images/fourcheese.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P40.jpg',
       name: 'Vegetariano',
       description: 'Tomat og ost',
       allergies: 'Gluten, egg og laktose',
@@ -68,7 +70,7 @@ const pizzaContainer = {
     },
     {
       id: '9',
-      img: 'images/ufo.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P47.jpg',
       name: 'The Wheelchair',
       description:
         'Vegansk pizza med avocado, oliven, sopp, løk, purreløk, vårløk og oregano',
@@ -77,7 +79,7 @@ const pizzaContainer = {
     },
     {
       id: '11',
-      img: 'images/nomeat.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P30.jpg',
       name: 'The No Meat',
       description: 'Sopp, paprika, purreløk og oregano',
       allergies: 'Hvete, egg, soya',
@@ -85,7 +87,7 @@ const pizzaContainer = {
     },
     {
       id: '12',
-      img: 'images/svensken.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P36.jpg',
       name: 'Rune Ali 1949',
       description: 'Pepperoni, bacon, løk, tomat',
       allergies: 'Hvete, egg, soya',
@@ -93,7 +95,7 @@ const pizzaContainer = {
     },
     {
       id: '13',
-      img: 'images/fourcheese.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P13.jpg',
       name: 'Fourcheese',
       description: 'Mozarella, parmesan, cheddar og blåmuggost',
       allergies: 'Hvete, egg, soya',
@@ -101,7 +103,7 @@ const pizzaContainer = {
     },
     {
       id: '14',
-      img: 'images/donjuan.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P15.jpg',
       name: 'No gluten here, bitch!',
       description: 'Glutenfri deig, glutenfri ost, biff',
       allergies: 'Egg, soya',
@@ -109,7 +111,7 @@ const pizzaContainer = {
     },
     {
       id: '15',
-      img: 'images/viking.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P47.jpg',
       name: 'Love pizza',
       description:
         'Biff, champinjong, løk, purreløk, oliven, toppet med litt kjærlighet ;)',
@@ -118,7 +120,7 @@ const pizzaContainer = {
     },
     {
       id: '16',
-      img: 'images/tacospesial.jpg',
+      img: 'https://www.peppes.no/produktbilder_pepp2013/600x300/P17.jpg',
       name: 'Shrimpy love',
       description: 'Reke, purreløk, paprika',
       allergies: 'Hvete, egg, soya',
