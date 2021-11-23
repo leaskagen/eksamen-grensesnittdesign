@@ -7,6 +7,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 import './../checkout.css';
+import { Link } from 'react-router-dom';
 
 function Checkout() {
     const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]')
@@ -48,6 +49,7 @@ function Checkout() {
     return (
         <div>
             <div>
+                
                 <Basket
                     cartItems={cartItems}
                     addItem={addItem}
@@ -70,11 +72,13 @@ function Checkout() {
                 </div>
                 
                 <div id="pay-Options">
-                <h4>Velg betlingsmetode:</h4>
-                <Button  id="paypal-btn" variant="primary">PayPal</Button>
-                <Button variant="secondary">Klarna</Button>
-                <Button variant="warning">Debit/Mastercard</Button>
-                <Button variant="light">Vipps</Button>
+                <h4>Velg betalingsmetode:</h4>
+                <Link to="/OrderComplete.js">
+                <Button id="paypal-btn" variant="primary"><strong>PayPal</strong></Button>
+                <Button  id="klarna-btn" variant="secondary"><strong>Klarna</strong></Button>
+                <Button  id="card-btn" variant="warning"><strong>Debit/Mastercard</strong></Button>
+                <Button  id="vipps-btn" variant="light"><strong>Vipps</strong></Button>
+                </Link>
                 </div>
             </div>
         </div>
