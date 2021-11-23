@@ -9,6 +9,47 @@
         background-position: 0;
     }
 
+    main {
+        margin-top: 5em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .desktop-div {
+        background-color: white;
+        width: 80vw;
+        height: max-content;
+        padding: 3em;
+
+        box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+        -webkit-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+        -moz-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+    }
+
+    #contact-h {
+        flex-basis: 100%;
+    }
+
+    #contact-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #contact-map-div .mapouter{
+        margin-top: 30px;
+        position:relative;
+        text-align:right;
+        height:500px;
+        width:700px;
+    }
+    
+    #contact-map-div .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width:100%;
+    }
     .link {
         font-size: 34px;
     }
@@ -43,7 +84,7 @@
     #front-page-div {
         background-color: white;
         width: 80vw;
-        height: 80vh;
+        height: 85vh;
         padding: 3em;
 
         display: flex;
