@@ -201,13 +201,6 @@ ul {
   }
 }
 
-.mapouter{
-  position:relative;
-  text-align:right;
-  height:200px;
-  width:300px;
-}
-
 .menu-item {
   display: flex;
   flex-direction: column;
