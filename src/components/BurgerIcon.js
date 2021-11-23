@@ -4,7 +4,7 @@ import Header from "./Header";
 
 function BurgerIcon({ open, ...props }) {
   const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]');
-  const [cartItems, setCartItems] = useState(cartFromLS);
+  const [cartItems] = useState(cartFromLS);
 
   useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
@@ -14,9 +14,16 @@ function BurgerIcon({ open, ...props }) {
     <div className={open ? "burger-menu open" : "burger-menu"} {...props}>
       <Header countCartItems={cartItems.length}></Header>
       <div id="shopping-cart-icon">
-        <ShoppingCartOutlinedIcon
+        <div className="sc-icon-small">
+          <ShoppingCartOutlinedIcon 
           fontSize="inherit"
           style={{ fontSize: "40px" }} />
+        </div>
+        <div className="sc-icon">
+          <ShoppingCartOutlinedIcon 
+          fontSize="inherit"
+          style={{ fontSize: "80px" }} />
+        </div>
       </div>
       <div className="bar1" key="b1" />
       <div className="bar2" key="b2" />
