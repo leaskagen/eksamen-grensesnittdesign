@@ -1,7 +1,12 @@
-import { Button } from '@mui/material';
+import { Button, TextField } from '@mui/material';
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Basket from "../components/Basket";
+import PhoneIcon from '@mui/icons-material/Phone';
+import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
+import PersonIcon from '@mui/icons-material/Person';
+import './../checkout.css';
 
 function Checkout() {
     const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]')
@@ -48,10 +53,29 @@ function Checkout() {
                     addItem={addItem}
                     removeItem={removeItem}
                 ></Basket>
-                <Button variant="primary">PayPal</Button>
+
+                <div id="personalia-text">
+                <PersonIcon className="contact-icon"/>
+                <TextField id="standard-basic" label="Fullt navn:"   placeholder="Fullt navn:" variant="standard" />
+                <br></br>
+                <PhoneIcon className="contact-icon" />
+                <TextField id="standard-basic" label="Telefon:" placeholder="Telefon:" variant="standard" />
+                <br></br>
+                <MailIcon className="contact-icon"/>
+                <TextField id="standard-basic" label="Email:"  placeholder="Email:" variant="standard" />
+                <br></br>
+                <HomeIcon className="contact-icon"/>
+                <TextField id="standard-basic" label="Adresse:"  placeholder="Email:" variant="standard" />
+                <br></br>
+                </div>
+                
+                <div id="pay-Options">
+                <h4>Velg betlingsmetode:</h4>
+                <Button  id="paypal-btn" variant="primary">PayPal</Button>
                 <Button variant="secondary">Klarna</Button>
                 <Button variant="warning">Debit/Mastercard</Button>
-                <Button variant="light">Krypto</Button>
+                <Button variant="light">Vipps</Button>
+                </div>
             </div>
         </div>
     );
