@@ -1,14 +1,16 @@
+//import '../App.css';
+import { Container } from "@mui/material";
 import {React} from "react";
-import {Link} from "react-router-dom";
+
 
 export default function Basket(props) {
     const { cartItems, addItem, removeItem } = props;
     const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
 
     return (
-        <div>
+        <Container>
             <h2>Handlekurven</h2>
-            <div>
+            <div className="text-right">
                 {cartItems.length === 0 && <div>Handlekurven er tom</div>}
                 {cartItems.map((item) => (
                     <div key={item.id}>
@@ -21,7 +23,6 @@ export default function Basket(props) {
                                 <strong>+</strong>
                             </button>
                         </div>
-
                         <div>
                             {item.qty} x {item.price},-
                         </div>
@@ -32,24 +33,19 @@ export default function Basket(props) {
                     <>
                         <hr></hr>
                         <div>
-                            <div>
+                            <div className="text-center">
                                 <strong>TOTALPRIS</strong>
                             </div>
-                            <div>
+                            <div className="text-center">
                                 <strong>{itemsPrice},-</strong>
                             </div>
                         </div>
                         <hr />
-                        <div>
-                            <Link to="/Checkout">
-                            <button>
-                                Til Betaling
-                            </button>
-                            </Link>
-                        </div>
+                        
                     </>
                 )}
             </div>
-        </div>
+        </Container>
+        
     );
 }

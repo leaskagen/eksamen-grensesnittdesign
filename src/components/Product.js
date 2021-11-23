@@ -3,8 +3,8 @@ import React from 'react'
 export default function Product(props) {
     const { pizza, addItem } = props;
     return (
-        <div>
-            <img src={pizza.img} alt={pizza.name} />
+        <div className="menu-item">
+            <img src={pizza.img} alt={pizza.name} className="small" />
             <h2>{pizza.name}</h2>
             <div>{pizza.description}</div>
             <div>{pizza.allergies}</div>
