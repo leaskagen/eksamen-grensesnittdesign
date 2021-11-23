@@ -1,3 +1,4 @@
+//Importing components
 import { Button, TextField } from '@mui/material';
 import React from 'react'
 import { useState, useEffect } from 'react';
@@ -85,4 +86,5 @@ function Checkout() {
     );
 }
 
+//Exporting function
 export default Checkout;

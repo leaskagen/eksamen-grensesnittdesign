@@ -1,15 +1,18 @@
+//Importing components needed
 import React from 'react';
 import Main from "../components/Main";
 import pizzaContainer from '../MenuContainer/PizzaContainer';
 import { useState, useEffect } from 'react';
 import SideBar from './../components/SideMenu';
 import NavBar from './../components/Navbar';
-
 import Popup from "reactjs-popup";
 import BurgerIcon from "./../components/BurgerIcon";
 import ShoppingCart from "./../components/ShoppingCart";
 
+//Function for printing out menu with an added and remove function to shopping cart.
 function Menu() {
+
+    //Saving shopping cart to localStorage when reloading page
     const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]');
     const { pizzas } = pizzaContainer;
     const [cartItems, setCartItems] = useState([]);
@@ -74,10 +77,3 @@ function Menu() {
     );
 }
 export default Menu;
-/*
-<Link to="/Checkout">
-                <button>
-                    <Header countCartItems={cartItems.length}></Header>
-                </button>
-            </Link>
-            */

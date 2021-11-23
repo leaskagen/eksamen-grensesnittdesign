@@ -1,8 +1,9 @@
+// Importing components needed
 import React from 'react';
-
 import SideBar  from './../components/SideMenu';
 import NavBar from './../components/Navbar';
 
+// Function for printing out delivery information page.
 export default function Delivery() {
     return (
         <div>

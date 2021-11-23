@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from "react";
+//Importing components
+import React from "react";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Header from "./Header";
 
+//Function for listing burgerIcon (shoppingcart)
 function BurgerIcon({ open, ...props }) {
+
+  //Storing cart items to localStorage
   const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]');
 
   return (
@@ -33,4 +37,6 @@ function BurgerIcon({ open, ...props }) {
     </div>
   );
 }
+
+//Exporting method
 export default BurgerIcon;
