@@ -2,7 +2,7 @@ import { Button } from '@mui/material';
 import React from 'react'
 
 export default function Product(props) {
-    const { pizza, addItem} = props;
+    const { pizza, addItem } = props;
 
     return (
         <div className="food-item">
@@ -14,6 +14,7 @@ export default function Product(props) {
             <div className="text-right">
                 <Button className="food-button" variant="contained" onClick={() => addItem(pizza)}><strong>Legg til</strong></Button>
             </div>
+            <hr className="menu-hr"></hr>
         </div>
     );
 }

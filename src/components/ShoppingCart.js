@@ -9,6 +9,5 @@ export default ({ close }) => (
       <Link to="/Checkout">
         <button>Bestill</button>
       </Link>
-      
   </div>
 );
