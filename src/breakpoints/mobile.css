@@ -3,7 +3,6 @@
         margin-top: 20px;
         display: flex;
         flex-direction: column;
-        overflow-y: hidden;
     }
 
     body::before{
@@ -16,6 +15,14 @@
 
     .content-div {
         flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .link {
+        font-size: 24px;
+        padding: 0.8em;
     }
 
     ul {
@@ -23,14 +30,15 @@
     }
 
     h1 {
-        margin-top: 40px;
+        justify-self: center;
+        margin: 40px 50px;
+        border-bottom: lightgray solid 1px;
+        padding-bottom: 10px;
     }
 
     .front-page-div div {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        
     }
 
     .front-news {
