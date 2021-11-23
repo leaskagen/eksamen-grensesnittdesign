@@ -9,7 +9,7 @@ import Popup from "reactjs-popup";
 import BurgerIcon from "./../components/BurgerIcon";
 import ShoppingCart from "./../components/ShoppingCart";
 
-function Menu(props) {
+function Menu() {
     const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]');
     const { pizzas } = pizzaContainer;
     const [cartItems, setCartItems] = useState(cartFromLS);

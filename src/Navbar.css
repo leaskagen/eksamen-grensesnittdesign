@@ -6,6 +6,10 @@
     box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
     -webkit-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
     -moz-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
 }
 nav > div {
     display: flex;

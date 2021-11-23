@@ -47,6 +47,10 @@ p {
   font-size: 24px;
 }
 
+#contact-div a {
+  font-size: 24px;
+}
+
 #front-page h1 {
   font-size: 40px;
 }
@@ -195,13 +199,6 @@ ul {
   to {
     transform: rotate(359deg);
   }
-}
-
-.mapouter{
-  position:relative;
-  text-align:right;
-  height:200px;
-  width:300px;
 }
 
 .menu-item {
