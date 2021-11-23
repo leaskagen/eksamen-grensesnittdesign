@@ -4,7 +4,7 @@ import Header from "./Header";
 
 function BurgerIcon({ open, ...props }) {
   const cartFromLS = JSON.parse(localStorage.getItem('cartItems') || '[]');
-  const [cartItems, setCartItems] = useState(cartFromLS);
+  const [cartItems] = useState(cartFromLS);
 
   useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));

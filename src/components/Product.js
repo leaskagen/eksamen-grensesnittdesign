@@ -1,8 +1,8 @@
 import { Button } from '@mui/material';
-import React, { useEffect } from 'react'
+import React from 'react'
 
 export default function Product(props) {
-    const { pizza, addItem, useEffect } = props;
+    const { pizza, addItem} = props;
 
     return (
         <div className="food-item">
