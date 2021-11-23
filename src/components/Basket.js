@@ -8,8 +8,8 @@ export default function Basket(props) {
 
     return (
         <Container>
-            <h2>Handlekurven</h2>
-            <div className="text-right">
+            <h2>Handlekurv</h2>
+            <div className="text-center">
                 {cartItems.length === 0 && <div>Handlekurven er tom</div>}
                 {cartItems.map((item) => (
                     <div key={item.id}>

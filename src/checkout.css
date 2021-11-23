@@ -1,0 +1,21 @@
+#paypal-btn{
+    background-color: rgb(17, 17, 167);
+    color: white;
+}
+#card-btn{
+    background-color: rgba(128, 128, 128, 0.493);
+    color: black;
+}
+
+#vipps-btn{
+    background-color: #f7612b;
+    color: white;
+}
+#klarna-btn{
+    background-color: rgb(255, 67, 145);
+    color: black;
+}
+
+#personalia-text{
+    text-align: center;
+}
