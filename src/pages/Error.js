@@ -8,7 +8,7 @@ export default function Error() {
     const navigate = useNavigate();
 
     return (
-        <div id="error-page">
+        <main id="error-page">
             <figure>
                 <img src={Logo} alt="Spinning pizza logo">
                 </img>
@@ -16,6 +16,6 @@ export default function Error() {
             <h2>Denne siden finnes ikke</h2>
             <h3 onClick={() => navigate(-1)} id="back-button">Gå tilbake</h3>
             
-        </div>
+        </main>
     )
 }

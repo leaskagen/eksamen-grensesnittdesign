@@ -9,8 +9,20 @@
         background-position: -200px 0;
     }
 
+    main {
+        padding: 20px 40px;
+    }
+
     .content-div {
         flex-basis: 100%;
+    }
+
+    ul {
+        margin-top: 5px;
+    }
+
+    h1 {
+        margin-top: 40px;
     }
 
     .content-div > div {
