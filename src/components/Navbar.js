@@ -23,7 +23,7 @@ export default function Navbar() {
                 </div>
             </Link>
             <div className="nav-div">
-                <Link to="/Menu" className="link">Se menyen</Link>
+                <Link to="/Menu" className="link">Meny</Link>
                 <Link to="/Delivery" className="link">Leveringsområder</Link>
                 <Link to="/Contact" className="link">Kontakt oss</Link>
             </div>

@@ -8,11 +8,11 @@ export default function Product(props) {
         <div className="food-item">
             <img src={pizza.img} alt={pizza.name} className="small" />
             <h2>{pizza.name}</h2>
-            <div>{pizza.description}</div>
-            <div>{pizza.allergies}</div>
-            <div>{pizza.price},-</div>
+            <p>{pizza.description}</p>
+            <p>Allergener: {pizza.allergies}</p>
+            <h3>{pizza.price},-</h3>
             <div className="text-right">
-                <Button color="success" variant="contained" onClick={() => addItem(pizza)}>Legg til</Button>
+                <Button className="food-button" variant="contained" onClick={() => addItem(pizza)}><strong>Legg til</strong></Button>
             </div>
         </div>
     );

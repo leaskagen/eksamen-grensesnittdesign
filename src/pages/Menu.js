@@ -54,12 +54,12 @@ function Menu() {
             <NavBar></NavBar>
             <main>
                 
-                <div className="desktop-div">
+                <div className="desktop-div" >
                     <div>
                         <h1>Meny</h1>
                         <hr></hr>
                     </div>
-                    <div>
+                    <div id="menu-div">
                         <Main pizzas={pizzas} addItem={addItem} removeItem={removeItem}></Main>
                     </div>
                 </div>
