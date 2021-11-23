@@ -14,6 +14,7 @@ export default function Product(props) {
             <div className="text-right">
                 <Button className="food-button" variant="contained" onClick={() => addItem(pizza)}><strong>Legg til</strong></Button>
             </div>
+            <hr className="menu-hr"></hr>
         </div>
     );
 }

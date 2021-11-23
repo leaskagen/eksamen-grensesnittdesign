@@ -24,9 +24,9 @@ export default function Home() {
 
                 <div id="front-page-div">
                     <div className="content-div">
-                        <Link to="/Menu" className="link">Se menyen</Link>
-                        <Link to="/Delivery" className="link">Leveringsområder</Link>
-                        <Link to="/Contact" className="link">Kontakt oss</Link>
+                        <Link to="/Menu" className="link link-home">Se menyen</Link>
+                        <Link to="/Delivery" className="link link-home">Leveringsområder</Link>
+                        <Link to="/Contact" className="link link-home">Kontakt oss</Link>
                     </div>
 
                     <div className="front-news">
