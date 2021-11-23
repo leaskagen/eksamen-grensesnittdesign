@@ -6,6 +6,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import './../checkout.css';
 import { Link } from 'react-router-dom';
 
@@ -73,12 +74,13 @@ function Checkout() {
                 
                 <div id="pay-Options">
                 <h4>Velg betalingsmetode:</h4>
-                <Link to="/OrderComplete.js">
                 <Button id="paypal-btn" variant="primary"><strong>PayPal</strong></Button>
                 <Button  id="klarna-btn" variant="secondary"><strong>Klarna</strong></Button>
                 <Button  id="card-btn" variant="warning"><strong>Debit/Mastercard</strong></Button>
                 <Button  id="vipps-btn" variant="light"><strong>Vipps</strong></Button>
-                </Link>
+                <ArrowBackIcon class="text-left" Link to="/Menu" className="link link-home"/>
+              
+                    
                 </div>
             </div>
         </div>
