@@ -11,7 +11,9 @@ export default function OrderCompleted() {
                 </img>
             </figure>
             <h2>Bestilling fullført!</h2>
-            <p>Estimert leveringstid: 2 døgn. haha cold pizza bitch. No refound</p>
+            <p>Estimert leveringstid: 2 døgn. </p>
+            <p> Ingen refusjon </p>
+            <p> Takk for bestillingen! </p>
             <Link to="/"><h3>Tilbake til hovedsiden</h3></Link>
         </main>
     )
