@@ -4,7 +4,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
 import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
-import SideBar  from './../components/SideMenu';
+import SideBar from './../components/SideMenu';
 import NavBar from './../components/Navbar';
 
 //Contact-function for printing out contact information
@@ -22,12 +22,12 @@ export default function Contact() {
                     <div>
                         <h3 className="contact-h">Telefon<PhoneIcon className="contact-icon" /></h3>
                         <a href="tel:+4741384808">+ 47 413 84 808</a>
-                        <h3 className="contact-h">Email<MailIcon className="contact-icon"/></h3>
+                        <h3 className="contact-h">Email<MailIcon className="contact-icon" /></h3>
                         <a href="mailto:pizzeriabella@pizza.com">pizzeriabella@pizza.com</a>
-                        <h3 className="contact-h">Adresse<HomeIcon className="contact-icon"/></h3>
+                        <h3 className="contact-h">Adresse<HomeIcon className="contact-icon" /></h3>
                         <p>Louises Gate 17c</p>
                         <p>0169 Oslo</p>
-                        <h3 className="contact-h">Åpningstider<AccessTimeOutlinedIcon className="contact-icon"/></h3>
+                        <h3 className="contact-h">Åpningstider<AccessTimeOutlinedIcon className="contact-icon" /></h3>
                         <p>Man-Tor: <strong>10:00-23:00</strong></p>
                         <p>Fre-Lør: <strong>10:00-03:00</strong></p>
                         <p>Søndag: <strong>12:00-23:00</strong></p>

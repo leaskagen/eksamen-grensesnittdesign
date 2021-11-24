@@ -55,7 +55,7 @@ function Menu() {
             <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></SideBar>
             <NavBar></NavBar>
             <main>
-                
+
                 <div className="desktop-div" >
                     <div>
                         <h1>Meny</h1>
@@ -70,7 +70,7 @@ function Menu() {
                 modal
                 overlayStyle={{ background: "rgba(255,255,255,0.98" }}
                 closeOnDocumentClick={false}
-                trigger={open => <BurgerIcon open={open} /> }>
+                trigger={open => <BurgerIcon open={open} />}>
                 {close => <ShoppingCart close={close, useEffect} />}
             </Popup>
         </div>

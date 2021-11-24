@@ -5,25 +5,25 @@ import Logo from './../images/pizzalogo.png';
 
 //Sidebar which pops up when pressing the three bars.
 export default props => {
-  return (
-    <SideMenu>
-        <a href="/">
-            <figure className="side-menu-figure">
-                <img src={Logo} alt="Link to front page as Logo"></img>
-            </figure>
-        </a>
-            
-        <hr></hr>
+    return (
+        <SideMenu>
+            <a href="/">
+                <figure className="side-menu-figure">
+                    <img src={Logo} alt="Link to front page as Logo"></img>
+                </figure>
+            </a>
 
-        <a className="menu-item" href="/Menu">
-            Meny
-        </a>
-        <a className="menu-item" href="/Delivery">
-            Leveringsområder
-        </a>
-        <a className="menu-item" href="/Contact">
-            Kontakt oss
-        </a>    
-    </SideMenu>
-  );
+            <hr></hr>
+
+            <a className="menu-item" href="/Menu">
+                Meny
+            </a>
+            <a className="menu-item" href="/Delivery">
+                Leveringsområder
+            </a>
+            <a className="menu-item" href="/Contact">
+                Kontakt oss
+            </a>
+        </SideMenu>
+    );
 };

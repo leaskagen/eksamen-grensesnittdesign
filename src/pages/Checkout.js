@@ -53,7 +53,7 @@ function Checkout() {
     return (
         <div className="checkout-div">
             <div>
-                <ArrowBackIcon onClick={() => navigate(-1)} className="arrow" style={{ fontSize: "50px" }}/>
+                <ArrowBackIcon onClick={() => navigate(-1)} className="arrow" style={{ fontSize: "50px" }} />
                 <Basket
                     cartItems={cartItems}
                     addItem={addItem}

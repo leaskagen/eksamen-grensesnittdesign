@@ -1,6 +1,6 @@
 // Importing components needed
 import React from 'react';
-import SideBar  from './../components/SideMenu';
+import SideBar from './../components/SideMenu';
 import NavBar from './../components/Navbar';
 
 // Function for printing out delivery information page.
@@ -23,7 +23,7 @@ export default function Delivery() {
                             <li>Louises Gate 17c</li>
                             <li>0169 Oslo</li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="mapouter-small"><div class="gmap_canvas">
                         <iframe title="iframe1" width="260" height="220" id="gmap_canvas" src="https://maps.google.com/maps?q=louises%20gate%2017c&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div></div>

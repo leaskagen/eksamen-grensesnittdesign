@@ -5,7 +5,7 @@
         flex-direction: column;
     }
 
-    body::before{
+    body::before {
         background-position: -200px 0;
     }
 
@@ -40,7 +40,7 @@
     ul {
         margin-top: 5px;
     }
-    
+
     h1 {
         justify-self: center;
         padding-top: 20px;
@@ -76,9 +76,9 @@
         margin-top: 30px;
         display: flex;
         justify-content: center;
-        text-align:right;
-        height:max-content;
-        width:100%;
+        text-align: right;
+        height: max-content;
+        width: 100%;
     }
 
     #delivery-div .mapouter {
@@ -105,7 +105,7 @@
         margin: .7em;
         padding: 1em;
         max-width: 320px;
-        
+
     }
 
     .sc-icon, .sc-icon-medium {

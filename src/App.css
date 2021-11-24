@@ -17,7 +17,7 @@ body {
   height: 100vh;
 }
 
-body::before{
+body::before {
   background-image: url(./images/background.jpg);
   position: fixed;
   background-size: cover;
@@ -62,6 +62,7 @@ p {
 #contact-div a {
   font-size: 24px;
 }
+
 .link {
   text-decoration: none;
   color: black;
@@ -86,14 +87,14 @@ p {
   align-items: center;
 }
 
-#logo-front > img {
+#logo-front>img {
   width: 70%;
 }
 
 #front-page {
   padding: 0;
   margin: 0;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 /* ----------- Contact page ------------- */
@@ -149,15 +150,15 @@ p {
   align-items: center;
 }
 
-.checkout-div > div {
+.checkout-div>div {
   background-color: white;
   padding: 2em;
-  box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
-        -webkit-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
-        -moz-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+  box-shadow: -1px -4px 27px -13px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -1px -4px 27px -13px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -1px -4px 27px -13px rgba(0, 0, 0, 0.5);
 }
 
-#pay-Options > div {
+#pay-Options>div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -179,25 +180,27 @@ p {
   margin-right: 0.5em;
 }
 
-#paypal-btn{
+#paypal-btn {
   background-color: rgb(17, 17, 167);
   color: white;
 }
-#card-btn{
+
+#card-btn {
   background-color: rgba(128, 128, 128, 0.493);
   color: black;
 }
 
-#vipps-btn{
+#vipps-btn {
   background-color: #f7612b;
   color: white;
 }
-#klarna-btn{
+
+#klarna-btn {
   background-color: rgb(255, 67, 145);
   color: black;
 }
 
-#personalia-text{
+#personalia-text {
   text-align: center;
 }
 
@@ -209,9 +212,9 @@ p {
   left: 36px;
   top: 36px;
   background-color: white;
-  box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
-  -webkit-box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
-  -moz-box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
+  box-shadow: 1px 1px 6px 9px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 1px 1px 6px 9px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 1px 1px 6px 9px rgba(255, 255, 255, 1);
 }
 
 .bm-burger-bars {
@@ -306,7 +309,8 @@ p {
 .side-menu-figure {
   margin-left: 12px;
 }
-.side-menu-figure > img {
+
+.side-menu-figure>img {
   width: 150px;
 }
 
@@ -394,6 +398,7 @@ p {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }

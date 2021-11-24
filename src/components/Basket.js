@@ -1,6 +1,6 @@
 //Importing stuff
 import { Container } from "@mui/material";
-import {React} from "react";
+import { React } from "react";
 
 //function for basket
 export default function Basket(props) {
@@ -28,7 +28,7 @@ export default function Basket(props) {
                         <div>
                             {item.qty} x {item.price},-
                         </div>
-                        <hr/>
+                        <hr />
                     </div>
                 ))}
 

@@ -15,7 +15,7 @@ export default function Navbar() {
                 <div className="nav-logo">
                     <figure>
                         <img src={Logo} alt="logo"></img>
-                        
+
                     </figure>
                     <h1>Pizzeria Bella</h1>
                 </div>
@@ -27,9 +27,9 @@ export default function Navbar() {
             </div>
 
             <Routes>
-                <Route path="/Menu" element={<Menu/>}/>
-                <Route path="/Delivery" element={<Delivery/>}/>
-                <Route path="/Contact" element={<Contact/>}/>                
+                <Route path="/Menu" element={<Menu />} />
+                <Route path="/Delivery" element={<Delivery />} />
+                <Route path="/Contact" element={<Contact />} />
             </Routes>
         </nav>
     )

@@ -22,17 +22,17 @@ import OrderComplete from './pages/OrderComplete';
 
 //import { Home, Menu, Contact, Delivery, Error} from './pages';
 
-function App() {  
+function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route path="/Menu" element={<Menu/>}/>
-        <Route path="/Contact" element={<Contact/>}/>
-        <Route path="/Delivery" element={<Delivery/>}/>
-        <Route path="/Checkout" element={<Checkout/>}/>
-        <Route path="/OrderComplete" element={<OrderComplete/>}/>
-        <Route path="*" element={<Error/>}/>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/Menu" element={<Menu />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Delivery" element={<Delivery />} />
+        <Route path="/Checkout" element={<Checkout />} />
+        <Route path="/OrderComplete" element={<OrderComplete />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
