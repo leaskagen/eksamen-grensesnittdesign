@@ -39,8 +39,6 @@ export default function Home() {
                     </div>
                 </div>
                 
-                
-
                 <Routes>
                     <Route path="/Menu" element={<Menu/>}/>
                     <Route path="/Delivery" element={<Delivery/>}/>

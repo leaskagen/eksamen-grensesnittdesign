@@ -24,59 +24,9 @@
         width: 80vw;
         height: max-content;
         padding: 3em;
-
         box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
         -webkit-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
         -moz-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
-    }
-
-    #contact-h {
-        flex-basis: 100%;
-    }
-
-    #contact-div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    #delivery-h {
-        flex-basis: 100%;
-    }
-
-    #delivery-div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    #delivery-div .mapouter-small {
-        display: none;
-    }
-
-    #contact-map-div {
-        display: block;
-    }
-    #contact-map-div .mapouter, #delivery-div .mapouter {
-        margin-top: 30px;
-        position:relative;
-        text-align:right;
-        height:500px;
-        width:max-content;
-    }
-    
-    #contact-map-div .gmap_canvas, #delivery-div .gmap_canvas {
-        overflow:hidden;
-        background:none!important;
-        height:500px;
-        width:600px;
-    }
-
-    #delivery-text {
-        max-width: 600px;
-        width: max-content;
     }
 
     .link {
@@ -102,13 +52,61 @@
         display: none;
     }
 
-    /*
-    #front-page div {
+    /* ------- Contact page -------- */
+
+    #contact-h {
+        flex-basis: 100%;
+    }
+
+    #contact-div {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-*/
 
+    #contact-map-div {
+        display: block;
+    }
+
+    #contact-map-div .mapouter, #delivery-div .mapouter {
+        margin-top: 30px;
+        position:relative;
+        text-align:right;
+        height:500px;
+        width:max-content;
+    }
+    
+    #contact-map-div .gmap_canvas, #delivery-div .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width:600px;
+    }
+
+    /* -------- Delivery page --------- */
+
+    #delivery-h {
+        flex-basis: 100%;
+    }
+
+    #delivery-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #delivery-div .mapouter-small {
+        display: none;
+    }
+
+    #delivery-text {
+        max-width: 600px;
+        width: max-content;
+    }
+
+    /* ------------ Front page ------------- */
 
     #front-page h1 {
         font-size: 50px;
@@ -119,10 +117,8 @@
         width: 80vw;
         height: 85vh;
         padding: 3em;
-
         display: flex;
         flex-direction: column;
-
         box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
         -webkit-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
         -moz-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
@@ -176,11 +172,7 @@
         color: gray;
     }
 
-    /*
-    .navbar-top {
-        display: block;
-    }
-    */
+    /* ---------- Menu page ------------ */
 
     #food-page {
         margin-top: 4em;
@@ -240,6 +232,8 @@
         object-fit: cover;
         align-self: center;
     }
+
+    /* ----------- Shopping cart --------- */
 
     #shopping-cart-icon {
         position: absolute;

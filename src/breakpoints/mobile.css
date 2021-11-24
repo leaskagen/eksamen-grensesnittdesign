@@ -13,8 +13,8 @@
         padding: 20px 40px;
     }
 
-    #front-page {
-        flex-direction: column;
+    .navbar-top {
+        display: none;
     }
 
     .content-div {
@@ -40,6 +40,13 @@
     ul {
         margin-top: 5px;
     }
+    
+    h1 {
+        justify-self: center;
+        padding-top: 20px;
+    }
+
+    /* ---------- Front page ---------- */
 
     #front-page h1 {
         margin: 40px 50px;
@@ -47,23 +54,19 @@
         padding-bottom: 10px;
     }
 
-    h1 {
-        justify-self: center;
-        padding-top: 20px;
-    }
-
     .front-page-div div {
         width: 100%;
-        
+    }
+
+    #front-page {
+        flex-direction: column;
     }
 
     .front-news {
         display: none;
     }
 
-    .navbar-top {
-        display: none;
-    }
+    /* --------- Contact and delivery page ------------ */
 
     #contact-map-div {
         display: none;
@@ -81,6 +84,8 @@
     #delivery-div .mapouter {
         display: none;
     }
+
+    /* ----------- Menu page ----------- */
 
     #food-page {
         margin-top: 1em;

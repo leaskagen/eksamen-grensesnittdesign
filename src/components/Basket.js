@@ -34,7 +34,6 @@ export default function Basket(props) {
 
                 {cartItems.length !== 0 && (
                     <>
-                        <hr></hr>
                         <div>
                             <div className="text-center">
                                 <strong>TOTALPRIS</strong>
@@ -44,11 +43,9 @@ export default function Basket(props) {
                             </div>
                         </div>
                         <hr />
-                        
                     </>
                 )}
             </div>
         </Container>
-        
     );
 }

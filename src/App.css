@@ -31,9 +31,20 @@ body::before{
   content: "";
 }
 
-main {
-
+hr {
+  border-top: 1px solid lightgray;
 }
+
+ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+#menu-div img {
+  border-radius: 5px;
+}
+
+/* Headlines, text anf links */
 
 h1, h2, h3, h4, h5 {
   text-align: center;
@@ -43,6 +54,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 30px;
 }
+
 p {
   font-size: 24px;
 }
@@ -50,27 +62,6 @@ p {
 #contact-div a {
   font-size: 24px;
 }
-
-#front-page h1 {
-  font-size: 40px;
-}
-
-#back-button {
-  color: darkslateblue;
-  font-size: 24px;
-  text-decoration: underline;
-}
-
-#logo-front {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#logo-front > img {
-  width: 70%;
-}
-
 .link {
   text-decoration: none;
   color: black;
@@ -83,14 +74,134 @@ p {
   text-decoration: underline;
 }
 
+/* ------ Front page ------ */
+
+#front-page h1 {
+  font-size: 40px;
+}
+
+#logo-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-front > img {
+  width: 70%;
+}
+
 #front-page {
   padding: 0;
   margin: 0;
   margin-top: 20px; 
 }
 
+/* ----------- Contact page ------------- */
 
-/* Position and sizing of burger button */
+.contact-icon {
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+  height: 24px;
+}
+
+.contact-h {
+  text-align: left;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+#contact-div p {
+  margin: 10px 0;
+}
+
+/* ---------- check out page --------- */
+
+#back-button {
+  color: darkslateblue;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.arrow {
+  position: relative;
+  font-size: 50px;
+  height: 100px;
+  cursor: pointer;
+
+}
+
+#order-complete-main {
+  display: flex;
+  flex-direction: column;
+}
+
+#order-complete-main figure {
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-div > div {
+  background-color: white;
+  padding: 2em;
+  box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+        -webkit-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+        -moz-box-shadow: -1px -4px 27px -13px rgba(0,0,0,0.5);
+}
+
+#pay-Options > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pay-btn {
+  margin-bottom: 1em;
+  text-decoration: none;
+}
+
+.pay-btn {
+  margin: 0.2rem;
+}
+
+.pay-icon {
+  position: relative;
+  top: 20px;
+  margin-right: 0.5em;
+}
+
+#paypal-btn{
+  background-color: rgb(17, 17, 167);
+  color: white;
+}
+#card-btn{
+  background-color: rgba(128, 128, 128, 0.493);
+  color: black;
+}
+
+#vipps-btn{
+  background-color: #f7612b;
+  color: white;
+}
+#klarna-btn{
+  background-color: rgb(255, 67, 145);
+  color: black;
+}
+
+#personalia-text{
+  text-align: center;
+}
+
+/* ---------- Sidemenu ------------ */
 .bm-burger-button {
   position: fixed;
   width: 36px;
@@ -98,44 +209,35 @@ p {
   left: 36px;
   top: 36px;
   background-color: white;
-
   box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
--webkit-box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
--moz-box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
+  -webkit-box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
+  -moz-box-shadow: 1px 1px 6px 9px rgba(255,255,255,1);
 }
 
-/* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: black;
 }
 
-/* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   background: darkred;
 }
 
-/* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 24px;
   width: 24px;
 }
 
-/* Color/shape of close button cross */
 .bm-cross {
   background: black;
 }
 
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
+
 .bm-menu-wrap {
   position: fixed;
   height: 100vh;
   top: 0;
 }
 
-/* General sidebar styles */
 .bm-menu {
   background: white;
   padding: 1.5em 1.5em 0;
@@ -145,34 +247,27 @@ Note: Beware of modifying this element as it can break the animations - you shou
   justify-content: center;
 }
 
-/* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: white;
 }
 
-/* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
 }
 
-/* Individual item */
 .bm-item {
   display: inline-block;
 }
 
-/* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
   top: 0;
   z-index: 1002 !important;
 }
 
-
-/* Individual item */
 .bm-item {
   display: inline-block;
-
   color: black;
   margin: 20px 10px;
   text-align: left;
@@ -184,43 +279,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: #b8b7ad;
 }
 
-hr {
-  border-top: 1px solid lightgray;
-}
-
-ul {
-  list-style: none;
-  font-size: 20px;
-}
-
-#error-page img {
-  animation: spin 20s infinite linear;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
 .menu-item {
   display: flex;
   flex-direction: column;
 }
 
-.menu-item.center {
-}
-
 .food-button {
   background-color: #6fd98b !important;
   color: black !important;
-}
-
-.col-1 {
-  flex: 2;
 }
 
 .block {
@@ -237,6 +303,14 @@ ul {
   text-align: center;
 }
 
+.side-menu-figure {
+  margin-left: 12px;
+}
+.side-menu-figure > img {
+  width: 150px;
+}
+
+/* ------------ Shopping cart ---------- */
 .burger-menu,
 .burger-menu.open {
   display: inline-block;
@@ -309,23 +383,18 @@ ul {
   top: 0px;
   right: 0px;
 }
-.contact-icon {
-  position: relative;
-  top: 5px;
-  margin-left: 5px;
-  height: 24px;
+
+/* ----------- Error page ---------- */
+
+#error-page img {
+  animation: spin 20s infinite linear;
 }
 
-.contact-h {
-  text-align: left;
-  font-size: 24px;
-  margin: 20px 0;
-}
-
-#contact-div p {
-  margin: 10px 0;
-}
-
-.pay-btn {
-  margin: 0.2rem;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

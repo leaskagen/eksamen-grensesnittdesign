@@ -16,7 +16,6 @@ export default function Error() {
             </figure>
             <h2>Denne siden finnes ikke</h2>
             <h3 onClick={() => navigate(-1)} id="back-button">Gå tilbake</h3>
-            
         </main>
     )
 }
