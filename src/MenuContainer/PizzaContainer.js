@@ -1,5 +1,3 @@
-import './../css/menu.css';
-
 //Creating Pizza Array
 const pizzaContainer = {
   pizzas: [
